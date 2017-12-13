@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>轮播图---swiper</title>
+    <link rel="stylesheet" href="swiper/swiper-3.4.2.min.css">
+    <style type="text/css">
+        html,body{
+            position: relative;
+            height: 100%;
+        }
+        body{
+            background: rgb(169, 202, 204);
+            font-family: Arial;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+        .swiper-container{
+            margin: 30px auto;
+            width: 600px;
+            height: 300px;
+        }
+        .swiper-slide{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+            text-align: center;
+            background-color: rgb(49, 120, 148);
+        }
+        .item{
+            width: 600px;
+            height: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img class="item swiper-lazy" data-src="images/img01.jpg" alt="01">
+                <div class="swiper-lazy-preloader"></div></div>
+            <div class="swiper-slide">
+                <img class="item swiper-lazy" data-src="images/img02.jpg" alt="02">
+                <div class="swiper-lazy-preloader"></div>
+            </div>
+            <div class="swiper-slide">
+                <img class="item swiper-lazy" data-src="images/img03.jpg" alt="03">
+                <div class="swiper-lazy-preloader"></div>
+            </div>
+            <div class="swiper-slide">
+                <img class="item swiper-lazy" data-src="images/img04.jpg" alt="04">
+                <div class="swiper-lazy-preloader"></div>
+            </div>
+            <div class="swiper-slide">
+                <img class="item swiper-lazy" data-src="images/img05.jpg" alt="05">
+                <div class="swiper-lazy-preloader"></div>
+            </div>
+        </div>
+        <br/>
+
+        <!-- 分页器 -->
+        <div class="swiper-pagination"></div>
+        <br/>
+
+        <!-- 导航按钮 -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <br/>
+
+        <!-- 滚动条 -->
+        <div class="swiper-scrollbar"></div>
+    </div>
+
+    <script type="text/javascript" src="swiper/swiper-3.4.2.min.js"></script>
+    <script type='text/javascript'>
+        //初始化
+        var mySwiper = new Swiper('.swiper-container', {
+            slidesPerview: 1,           //slider容器能同时显示的sliders数量
+            spaceBetween: 100,          //slide之间的距离
+            direction: 'horizontal',    //滑动的方向
+            speed: 600,                //滑动的速度
+            loop: true,                 //loop模式下实现循环
+
+            lazyLoading: true,          //图片延迟加载
+            lazyLoadingOnTransitionStart: true,     //过渡一开始就加载图片
+
+            //定时器
+            autoplay:{
+                deplay: 2500,
+                disableOnInteraction: false,
+            },
+
+            centeredSlides: true,       //活动块居中
+
+            // 分页器
+            pagination: '.swiper-pagination',
+            paginationClickable: true,  //允许点击分页器切换图片
+            
+
+            //前进后退按钮
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+
+            //滚动条
+            scrollbar: '.swiper-scrollbar',
+            scrollbarHide: true,        //滚动条自己隐藏
+            scrollbarDraggable: true,   //允许滚动条拖动
+            scrollbarSnapOnRelease: true,   //释放滚动条时自动贴合
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,93 @@
+body,div,img,ul,li{
+    margin: 0;
+    padding: 0;
+}
+ul,li{
+    list-style: none;
+}
+
+#box{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin: 30px auto;
+    overflow: hidden;
+    width: 600px;
+    height: 300px;
+}
+#box-inner{
+    position: absolute;
+    display: flex;
+    /* 定义排列方向和是否换行 */
+    flex-flow: row nowrap;
+    /* 主轴上的对齐方式---默认 */
+    justify-content: flex-start;
+    /* 交叉轴上的对齐方式---默认 */
+    align-items: stretch;
+    width: 4200px;
+}
+img{
+    /* flex-grow：0; */
+    width: 600px;
+    height: 300px;
+}
+
+#btn a{
+    position: absolute;
+    margin-top: -25px;
+    display: flex;
+    align-items: center;
+    width: 30px;
+    height: 50px;
+    background: #ccc;
+    opacity: 0.6;
+}
+#left{
+    left: 0;
+    top: 50%;
+}
+#right{
+    right: 0;
+    top: 50%;
+}
+#btn a:hover{
+    opacity: 1;
+    background-color:rgb(81, 207, 209);
+}
+#btn a img{
+    margin: 0 auto;
+    width: 20px;
+    height: 20px;
+}
+
+#num{ 
+    position: absolute;
+    bottom: 20px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 30px;
+    width: 50%;
+    border-radius: 15px;
+    /* background-color: rgb(98, 189, 120); */
+}
+#num li{
+    line-height: 30px;
+    text-align: center;
+    height: 30px;
+    width: 30px;
+    border-radius: 15px;
+    font-family: Arial;
+    font-size: 14px;
+    background-color: #ccc;
+    opacity: 0.6;
+}
+#num .list{
+    flex: 0 0 auto;
+}
+#num .on{
+    background-color: rgb(81, 207, 209);
+    opacity: 1;
+    color: #ccc;
+}

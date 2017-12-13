@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>test---swiper</title>
+    <link rel="stylesheet" href="swiper/swiper-3.4.2.min.css">
+</head>
+<body>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">slide 1</div>
+            <div class="swiper-slide">slide 2</div>
+            <div class="swiper-slide">slide 3</div>
+        </div>
+        <br/>
+
+        <!-- 分页器 -->
+        <div class="swiper-pagination"></div>
+        <br/>
+
+        <!-- 导航按钮 -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <br/>
+
+        <!-- 滚动条 -->
+        <div class="swiper-scrollbar"></div>
+    </div>
+
+    <script type="text/javascript" src="swiper/swiper-3.4.2.min.js"></script>
+    <script type='text/javascript'>
+        //初始化
+        var mySwiper = new Swiper('.swiper-container',{
+            direction: 'vertical',
+            loop: true,
+
+            // 分页器
+            pagination: '.swiper-pagination',
+
+            //前进后退按钮
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+
+            //滚动条
+            scrollbar: '.swiper-scrollbar',
+        })
+    </script>
+</body>
+</html>

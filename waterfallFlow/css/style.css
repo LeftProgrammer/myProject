@@ -1,0 +1,28 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* 瀑布流原理：每个子盒子都是相对主盒子进行定位 */
+#main{
+    position: relative;
+}
+
+/* 使用padding为了在JS中方便获取每一列的高度 */
+.box{
+    padding: 15px 0 0 15px;
+    float: left;
+}
+
+.pic{
+    padding: 10px;
+    border: 1px solid #999;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #999;
+}
+
+.pic img{
+    width: 165px;
+    height: auto;
+}

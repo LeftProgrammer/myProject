@@ -1,0 +1,388 @@
+
+#fs {
+    /*z-index: 9;*/
+    margin-bottom: 10px;
+}
+
+#fs, .fs_inner {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.fs_inner {
+    height: 480px;
+    background-color: #f6f6f6;
+    /*z-index: 1;*/
+}
+
+.fs_col1, .fs_col2 {
+    float: left;
+    height: 100%
+}
+
+.fs_col1 {
+    width: 190px;
+    margin-right: 10px;
+}
+
+.cate {
+    position: relative;
+    /*z-index: 2;*/
+}
+
+.cate_menu {
+    overflow: hidden;
+    height: 448px;
+    background-color: #6e6568;
+    padding: 16px 0;
+    color: #fff;
+}
+
+.cate_menu li {
+    overflow: hidden;
+    height: 28px;
+    line-height: 28px;
+    padding-left: 12px;
+    font-size: 0;
+}
+
+#fs .cate_menu li a {
+    color: #fff;
+    font-size: 14px;
+}
+
+#fs .cate_menu li a:hover {
+    color: #c81623;
+}
+
+#fs .cate_menu li span {
+    padding: 0 4px;
+    font-size: 12px;
+}
+
+.fs_col2 {
+    width: 790px;
+}
+
+.slider_main {
+    position: relative;
+    margin-bottom: 10px;
+    height: 340px;
+    overflow: hidden;
+}
+
+/*.slider_list, .slider_item, .slider_item_1k{*/
+/*overflow: hidden;*/
+/*position: absolute;*/
+/*width: 100%;*/
+/*height: 100%;*/
+/*}*/
+
+.slider_list {
+    overflow: hidden;
+    position: absolute;
+    width: 7900px;
+    height: 100%;
+    z-index: 1;
+}
+
+.slider_item {
+    float: left;
+    overflow: hidden;
+    /*position: absolute;*/
+    width: 790px;
+    height: 340px;
+    z-index: 1;
+}
+
+.slider_item_1k {
+    overflow: hidden;
+    /*position: absolute;*/
+    width: 790px;
+    height: 340px;
+    z-index: 1;
+}
+
+.slider_item {
+    background-color: #fff;
+}
+
+.slider_item_img {
+    width: 100%;
+    height: 100%;
+}
+
+.slider_indicator {
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    bottom: 20px;
+    font-size: 0;
+    padding: 4px 8px;
+    border-radius: 12px;
+    background-color: hsla(0, 0%, 100%, .3);
+    display: none;
+}
+
+.slider_indicator_btn {
+    display: inline-block;
+    margin-right: 10px;
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    background-color: #fff;
+}
+
+.slider_indicator_btn_on {
+    background-color: #db192a;
+}
+
+.slider_contorl_item {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    margin-top: -30px;
+    width: 30px;
+    height: 60px;
+    background-color: rgba(0, 0, 0, .1);
+    line-height: 70px;
+    text-align: center;
+}
+
+.slider_contorl_prev {
+    left: 0;
+}
+
+.slider_contorl_next {
+    right: 0;
+}
+
+.slider_contorl_item i {
+    font-size: 20px;
+    color: #fff;
+}
+
+.slider_contorl_item i img {
+    width: 20px;
+    height: 20px;
+}
+
+.slider_extend {
+    margin-left: -10px;
+    height: 30px;
+}
+
+.slider_bi {
+    overflow: hidden;
+    float: left;
+    margin-left: 10px;
+    width: 390px;
+    height: 130px;
+}
+
+.slider_bi_1k {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+}
+
+.slider_bi_img {
+    width: 390px;
+    height: 130px;
+}
+
+.fs_col3 {
+    float: right;
+    margin-left: 10px;
+    width: 190px;
+    height: 100%;
+    background-color: #fff;
+}
+
+.user {
+    padding: 0 15px;
+    height: 115px;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.user_info {
+    overflow: hidden;
+    position: relative;
+    padding: 15px 0 15px 58px;
+    height: 45px;
+}
+
+.user_info_avatar {
+    overflow: hidden;
+    position: absolute;
+    margin-left: -58px;
+    width: 50px;
+    height: 50px;
+}
+
+.user_info_avatar .user_info_avatar_1k {
+    display: block;
+    width: 43px;
+    height: 43px;
+}
+
+.user_info_avatar img {
+    display: block;
+    height: 100%;
+    width: 100%;
+    margin: 5px;
+    border-radius: 23px;
+}
+
+.user_info_show p {
+    overflow: hidden;
+    margin-top: 2px;
+    width: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.user_profit {
+    overflow: hidden;
+    height: 24px;
+    font-size: 0;
+    margin-right: -10px;
+}
+
+.user_profit_1k {
+    display: inline-block;
+    margin-right: 10px;
+    width: 70px;
+    height: 20px;
+    border: 2px solid #e01222;
+    line-height: 20px;
+    font-size: 12px;
+    text-align: center;
+    color: #e01222;
+}
+
+.news {
+    overflow: hidden;
+    padding: 0 15px;
+    height: 154px;
+}
+
+.news .mod_tab_head {
+    padding: 8px 0 4px;
+    border-bottom: 1px solid #e6e6e6;
+    position: relative;
+    line-height: 14px;
+}
+
+.news .mod_tab_head_item {
+    color: #333;
+    padding-right: 12px;
+    padding-left: 12px;
+    border-right: 1px solid #dfe0e1;
+}
+
+.news .news_first {
+    padding-left: 0;
+}
+
+.news .news_last {
+    padding-right: 0;
+    border-right: 0;
+}
+
+.news_tab_active {
+    position: absolute;
+    bottom: -1px;
+    left: -2px;
+    width: 28px;
+    height: 2px;
+    background: #db192b;
+    transition: transform .3s ease, -webkit-transform .3s ease;
+}
+
+.news_more {
+    position: absolute;
+    right: 0;
+    top: 8px;
+}
+
+.news .mod_tab_content {
+    padding: 12px 0;
+}
+
+.news_item {
+    line-height: 24px;
+    max-width: 160px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.service {
+    overflow: hidden;
+    position: relative;
+    height: 210px;
+}
+
+.service_entry {
+    overflow: hidden;
+    width: 190px;
+}
+
+.service_list {
+    margin-left: -1px;
+    width: 192px;
+    height: 210px;
+    overflow: hidden;
+}
+
+.service_item {
+    position: relative;
+    overflow: hidden;
+    float: left;
+    width: 47px;
+    height: 69px;
+    border-top: 1px solid #e7e7e7;
+    text-align: center;
+}
+
+.service_ico, .service_1k, .service_txt {
+    display: block;
+}
+
+.service_1k {
+    padding-top: 14px;
+    height: 55px;
+}
+
+.service_ico {
+    width: 24px;
+    height: 24px;
+    margin: auto;
+}
+
+.service_ico img {
+    width: 24px;
+    height: 24px;
+}
+
+.service_txt {
+    height: 22px;
+    line-height: 22px;
+    border-top: 2px solid #fff;
+}
+
+/*分隔线*/
+#fs .slider_contorl_item:hover {
+    background: #6da6be;
+}
+
+.slider_list{
+    transition: all 0.5s ease-out;
+    -webit-tansition: all 0.5s ease-out;
+    -moz-tansition: all 0.5s ease-out;
+    -ms-tansition: all 0.5s ease-out;
+    -o-tansition: all 0.5s ease-out
+}

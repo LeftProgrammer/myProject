@@ -1,0 +1,98 @@
+
+body{
+    -webkit-font-smoothing: antialiased;
+    background-color: #fff;
+    font-size: 12px;
+    color: #666;
+}
+
+.index{
+    background-color: #f6f6f6;
+}
+
+.w {
+    margin: auto;
+    width: 1190px;
+}
+
+a{
+    text-decoration: none;
+    color: #666;
+}
+a:hover{
+    color: #f10215;
+}
+
+.iconfont{
+    font-family: iconfont;
+    font-style: normal;
+    -webkit-text-stroke-width: .2px;
+}
+.cw_icon{
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    float: left;
+    border: 1px solid #e3e4e5;
+}
+
+.box_hd_arrow{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-top: 19px solid #f6f6f6;
+    border-right: 19px solid transparent;
+}
+.box_hd_dec{
+    position: absolute;
+    left: -4px;
+    top: -4px;
+    width: 28px;
+    height: 28px;
+}
+
+.box_tit{
+    font-family: fzzhengheis-el-gbregular;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 40px;
+    height: 40px;
+    padding-top: 9px;
+}
+.box_subtit{
+    position: relative;
+    float: right;
+    margin-top: 19px;
+    padding-right: 20px;
+    height: 24px;
+    line-height: 24px;
+    font-size: 14px;
+    color: #fff;
+}
+.box_subtit_arrow{
+    background-image: url(../image/seckill_all.png);
+    background-position: -154px -40px;
+    background-size: 218px;
+    background-repeat: no-repeat;
+    width: 15px;
+    height: 16px;
+    position: absolute;
+    right: 0;
+    top: 4px;
+}
+.box_bd{
+    background-color: #fff;
+}
+
+.top_img{
+    width: auto!important;
+}
+.mod_ver{
+    display: inline-block;
+    width: 0;
+    height: 100%;
+    vertical-align: middle;
+    font-size: 0;
+}

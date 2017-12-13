@@ -1,0 +1,150 @@
+
+
+
+.jdm-toolbar-wrap{
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 9999;
+    width: 0;
+    height: 100%;
+    background-color: #f10215;
+}
+
+.jdm-toolbar{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    border-right: 6px solid #7a6e6e;
+    -webkit-transition: right .3s ease-in-out 0s;
+    -moz-transition: right .3s ease-in-out 0s;
+    transition: right .3s ease-in-out 0s;
+}
+
+.jdm-toolbar-tabs{
+    position: absolute;
+    top: 50%;
+    left: -29px;
+    width: 35px;
+    margin-top: -61px;
+}
+.J-aLink{
+    position: relative;
+    width: 35px;
+    height: 35px;
+    margin-bottom: 1px;
+    cursor: pointer;
+    background-color: #7a6e6e;
+    -webkit-border-radius: 3px 0 0 3px;
+    -moz-border-radius: 3px 0 0 3px;
+    border-radius: 3px 0 0 3px;
+}
+.J-aLink .tab-tip{
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    width: 6px;
+    height: 6px;
+    background-position: -150px -150px;
+    z-index: 999;
+}
+.J-member .tab-ico{
+    background-position: -88px -175px;
+}
+.J-aLink .tab-ico{
+    width: 34px;
+    height: 35px;
+    margin-left: 1px;
+    position: relative;
+    z-index: 2;
+    background-color: #7a6e6e;
+}
+.jdm-tbar-panel-header .close-panel, .jdm-tbar-panel-header i, .J-aLink .tab-ico, .J-aLink .tab-tip, .jdm-toolbar-tabs .tabs-tip .ico{
+    display: inline-block;
+    background-image: url(../image/J-alink.png);
+    background-repeat: no-repeat;
+}
+.J-aLink .tab-text{
+    width: 62px;
+    height: 35px;
+    line-height: 35px;
+    color: #fff;
+    text-align: center;
+    font-family: "微软雅黑";
+    position: absolute;
+    z-index: 1;
+    left: 35px;
+    top: 0;
+    background-color: #7a6e6e;
+    -webkit-border-radius: 3px 0 0 3px;
+    -moz-border-radius: 3px 0 0 3px;
+    border-radius: 3px 0 0 3px;
+    -webkit-transition: left .3s ease-in-out .1s;
+    -moz-transition: left .3s ease-in-out .1s;
+    transition: left .3s ease-in-out .1s;
+}
+.J-aLink .tab-sub{
+    position: absolute;
+    z-index: 3;
+    right: 2px;
+    top: -5px;
+    height: 11px;
+    padding: 1px 2px;
+    border: 1px solid #b61d1d;
+    overflow: hidden;
+    color: #fff;
+    font: 11px/11px verdana;
+    text-align: center;
+    min-width: 11px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background-color: #cc6060;
+    background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0,#cc6060),color-stop(1,#b61d1d));
+    background-image: linear-gradient(to bottom,#cc6060 0,#b61d1d 100%);
+}
+.hide, .none{
+    display: none
+}
+
+.J-shopping .tab-ico{
+    background-position: -50px 0;
+}
+.J-interest .tab-ico{
+    background-position: -50px -50px;
+}
+.J-footprint .tab-ico{
+    background-position: -50px -100px;
+}
+.J-news .tab-ico{
+    background-position: -190px -150px;
+}
+.J-consult .tab-ico{
+    background-position: -50px -150px;
+}
+
+.J-trigger:hover .tab-ico{
+    background-color: #c81623;
+}
+.J-trigger:hover .tab-tip{
+    display: none;
+}
+.J-trigger:hover .tab-text{
+    left: -60px;
+    background-color: #c81623;
+}
+
+.jdm-toolbar-footer{
+    position: absolute;
+    bottom: -1px;
+    width: 100%;
+    left: -29px;
+}
+
+.J-top .tab-ico{
+    background-position: -50px -250px;
+}
+.J-feedback .tab-ico{
+    background-position: -50px -300px;
+}

@@ -1,0 +1,278 @@
+
+#shortcut {
+    border-bottom: 1px solid #ddd;
+    background-color: #e3e4e5;
+}
+
+#shortcut .w {
+    height: 30px;
+    line-height: 30px;
+    color: #999;
+}
+
+#shortcut a {
+    color: #999;
+}
+
+#shortcut a:hover {
+    color: #f10215;
+}
+
+.fl {
+    float: left;
+}
+
+#shortcut li {
+    float: left;
+}
+
+#shortcut .fl li {
+    margin-left: 200px;
+}
+
+.dorpdown {
+    position: relative;
+    z-index: 21;
+}
+
+#shortcut .dt {
+    padding: 0 7px 0 7px;
+}
+
+#shortcut .cw_icon {
+    height: 28px;
+    line-height: 28px;
+}
+
+#shortcut .fl li .iconfont {
+    font-size: 14px;
+    color: #f10215;
+}
+
+#shortcut .fl li i img {
+    width: 14px;
+    height: 14px;
+}
+
+.dorpdown_layer {
+    display: none;
+    position: absolute;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    box-shadow: 1px 2px 1px rgba(0, 0, 0, .1);
+}
+
+#shortcut .fl li .dd {
+    left: 0;
+    width: 300px;
+    padding: 10px;
+}
+
+#shortcut .dorpdown_layer {
+    top: 30px;
+}
+
+#shortcut .dd {
+    line-height: 24px;
+}
+
+.dd_spacer {
+    display: none !important;
+}
+
+#shortcut .fl li .item {
+    float: left;
+    width: 60px;
+    padding: 2px 0;
+}
+
+#shortcut .fl li .item a {
+    float: left;
+    padding: 0 8px;
+}
+
+#shortcut .fl li .item a.selected {
+    background-color: #f10215;
+    color: #fff;
+}
+
+.fr {
+    float: right;
+}
+
+#shortcut li.spacer {
+    overflow: hidden;
+    margin: 11px 5px 0;
+    width: 1px;
+    height: 10px;
+    background-color: #ccc;
+}
+
+#ttbar_login {
+    margin-right: 8px;
+    z-index: 20;
+}
+
+#ttbar_login .link_login {
+    font-family: verdana\,simsun;
+}
+
+.dorpdown {
+    position: relative;
+    z-index: 21;
+}
+
+.fr .cw_icon {
+    padding-right: 20px !important;
+}
+
+.fr .iconfont {
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    width: 12px;
+    height: 12px;
+    line-height: 12px;
+}
+
+.fr .iconfont img {
+    width: 12px;
+    height: 12px;
+}
+
+#ttbar_myjd .dorpdown_layer {
+    left: 0;
+    width: 280px;
+}
+
+#ttbar_myjd .myjd_list {
+    padding: 10px 0 10px 15px;
+    overflow: hidden;
+}
+
+#ttbar_myjd .myjd_list .fore1, #ttbar_myjd .myjd_list .fore2 {
+    float: left;
+    width: 126px;
+}
+
+#ttbar_myjd .myjd_list_2 {
+    border-top: 1px solid #f1f1f1;
+}
+
+#ttbar_serv .dd {
+    right: 0;
+    width: 174px;
+    padding: 10px 0;
+}
+
+#ttbar_serv .item_business, #ttbar_serv .item_client {
+    padding-left: 15px;
+    font-weight: 700;
+    color: #666;
+}
+
+#ttbar_serv .item {
+    display: inline-block;
+    width: 70px;
+    padding-left: 15px;
+    /*float: left;*/
+}
+
+#ttbar_serv .item_business {
+    margin-top: 5px;
+    padding-top: 5px;
+    border-top: 1px solid #eee;
+}
+
+#ttbar_navs .dd {
+    right: -84px;
+    width: 1188px;
+    padding: 15px 0;
+}
+
+#ttbar_navs dl {
+    float: left;
+    width: 255px;
+    padding-left: 20px;
+    border-left: 1px solid #eee;
+}
+
+#ttbar_navs dl.fore1 {
+    border-left: none;
+    width: 340px;
+}
+
+#ttbar_navs dt {
+    margin-bottom: 5px;
+    font-weight: 700;
+    color: #666;
+}
+
+#ttbar_navs dd {
+    overflow: hidden;
+}
+
+#ttbar_navs .item {
+    overflow: hidden;
+    float: left;
+    width: 85px;
+    white-space: nowrap;
+}
+
+.mobile {
+    position: relative;
+    z-index: 21;
+}
+
+.mobile_txt {
+    width: 60px;
+    text-align: center;
+}
+
+.mobile_static {
+    position: absolute;
+    left: 3px;
+    width: 66px;
+    height: 66px;
+    border: 1px solid #cfcfcf;
+}
+
+/*.mobile_static:before, .mobile_pop:before{*/
+/*content: '';*/
+/*position: absolute;*/
+/*display: block;*/
+/*top: -9px;*/
+/*left: 50%;*/
+/*margin-left: -5px;*/
+/*width: 0;*/
+/*height: 0;*/
+/*line-height: 0;*/
+/*border-width: 5px;*/
+/*border-style: solid;*/
+/*border-color: #e4e4e4 #e4e4e4 #e4e4e4;*/
+/*}*/
+.mobile_static_qrcode {
+    margin: 4px auto;
+    width: 60px;
+    height: 60px;
+    background: url(../image/shortcut_phone.png) 50% no-repeat;
+}
+
+.mobile_pop {
+    display: none;
+    position: absolute;
+    left: auto;
+    right: 0;
+    top: 30px;
+    width: 190px;
+    height: 270px;
+    border: 1px solid #cfcfcf;
+    background-color: #cccccc;
+    border-bottom: 3px solid #60575a;
+}
+
+/*分隔线*/
+#shortcut .cw_icon:hover {
+    background-color: #fff;
+    border-bottom: 2px solid #fff;
+}
